@@ -22,11 +22,11 @@ function setup() {
 }
 function draw() {
     image(video, 0, 0, 550, 400);
-    fill("red");
-    stroke("red");
     songStatus1 = toxic.isPlaying();
     songStatus2 = cradles.isPlaying();
     if(score_leftWrist > 0.2) {
+        fill("red");
+        stroke("red");
         circle(leftWristX, leftWristY, 20);
         cradles.stop();
         if(songStatus1 == false) {
@@ -35,6 +35,8 @@ function draw() {
         }
     }
     if(score_rightWrist > 0.2) {
+        fill("red");
+        stroke("red");
         circle(rightWristX, rightWristY, 20);
         toxic.stop();
         if(songStatus2 == false) {
