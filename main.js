@@ -27,7 +27,7 @@ function draw() {
     songStatus1 = toxic.isPlaying();
     songStatus2 = cradles.isPlaying();
     if(score_leftWrist > 0.2) {
-        circle(leftWristX. leftWristY, 20);
+        circle(leftWristX, leftWristY, 20);
         cradles.stop();
         if(songStatus1 == false) {
             toxic.play();
